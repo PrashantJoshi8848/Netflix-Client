@@ -1,0 +1,72 @@
+.listitems {
+  width: 225px;
+  height: 150px;
+  color: white;
+  background-color: black;
+  margin-right: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  &:hover {
+    width: 325px;
+    height: 300px;
+    box-shadow: 2px 3px 14px 0px rgba(255, 255, 255, 0.19);
+    -webkit-box-shadow: 2px 3px 14px 0px rgba(255, 255, 255, 0.19);
+    -moz-box-shadow: 2px 3px 14px 0px rgba(255, 255, 255, 0.19);
+    position: absolute;
+    top: -150px;
+
+    img {
+      height: 140px;
+    }
+    .ReactPlayer {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      .icons {
+        display: flex;
+        margin-bottom: 10px;
+
+        .icon {
+          border: 2px solid white;
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 10px;
+          font-size: 25px;
+        }
+      }
+      .itemInfoTop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: gray;
+        .limit {
+          border: 1px solid gray;
+          padding: 1px 5px;
+          margin: 0px 10px;
+        }
+      }
+      .desc {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .genre {
+        font-size: 14px;
+        color: lightgray;
+      }
+    }
+  }
+}
